@@ -8,7 +8,7 @@
 }
 
 /* shared styles  */
-.display-flex
+.flex
 {
 display: flex;
 
@@ -25,7 +25,15 @@ color:#727272 ;
 {
 color: #FF900E;
 }
-
+.btn
+{
+background-color: #FF900E;
+color: #ffffff;
+padding: 20px;
+font-weight: 600;
+font-size: 1.25rem;
+border-radius: 10px;
+}
 
 
 
@@ -55,12 +63,51 @@ font-weight: 500;
 {
 list-style: none;
 margin-right:30px
+}
 
+.nav , .banner
+{
+max-width: 1440px ;
+margin: 0 auto;
+}
+.banner-content
+{
+max-width: 850px ;
+margin: 0 auto;
+text-align: center;
+margin-bottom: 50px;
 
 }
+.banner-title
+{
+font-weight: 700;
+font-size: 4rem;
+}
+
 .brand
 {
 font-weight: 700;
 font-size: 3rem;
 
+}
+.banner-title
+{ 
+text-align: center;
+}
+.banner-description
+{
+text-align: center;
+}
+.banner img {
+width: 100%;
+justify-content: center;
+}
+
+/* responsive media quary */
+
+@media screen  and (max-width :576px) {
+  .nav,.nav-link
+{
+flex-direction: column;
+}
 }
