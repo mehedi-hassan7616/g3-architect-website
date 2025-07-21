@@ -141,6 +141,7 @@ margin: 0 ,auto;
 
 .features-enjoy
 {
+display: flex;
 padding-top: 50px;
 margin: 0 ,auto;
 justify-content: space-around;
@@ -214,18 +215,22 @@ background-color: tan ;
 /* responsive media quary */
 
 @media screen  and (max-width :576px) {
-  .nav,.nav-link,.teams
+  .nav,.nav-link,.teams,.features-enjoy
 {
 flex-direction: column;
 }
-.team-img
+.team-img,.fact-container
 {
 grid-template-columns: repeat(1,1fr);
+}
+.fact-container
+{
+grid-template-columns: repeat(2,1fr);
 }
 }
 @media screen  and (min-width :576px) and (max-width :992px)
 {
-.teams{
+.teams ,.features-enjoy{
 flex-direction: column;
 }
 
